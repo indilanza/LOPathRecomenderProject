@@ -2,7 +2,7 @@
 
 ## Diagrama de Clases y métodos principales
 
-![Diagrama de Clases](/imgs/UMLClasses.png)
+![Diagrama de Clases](/imgs/Clase UML.png)
 
 ### Descripción del Diagrama
 
