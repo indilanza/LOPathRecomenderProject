@@ -304,4 +304,4 @@ def prepareData():
 
     saveLoData(df_aux,'Lo_data.csv')
 
-    saveLoDataOrder() 
+    #saveLoDataOrder() 
