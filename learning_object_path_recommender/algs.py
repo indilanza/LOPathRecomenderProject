@@ -14,7 +14,7 @@ class CosineSimilarity():
 
         # no need for timestamp here
         df = df.drop(labels = 'timestamp', axis = 1)
-        # let's see what's the mean rating for each movie,
+        # let's see what's the mean rating for each LO,
         df_mean = df.groupby(['loId'], sort = False).mean().rename(columns = {'rating': 'mean'})
         # join mean values to original DataFrame
         df = df.join(df_mean, on = 'loId', sort = False)
@@ -22,9 +22,9 @@ class CosineSimilarity():
         # so that rating of 0 becomes neutral
         df['rating'] = df['rating'] - df['mean']
         # ok? now pivot original DataFrame so that it becomes a feature/document matrix
-        # and fill all NaNs (where a user hasn't rated a movie) with zeros, which is legal now
+        # and fill all NaNs (where a user hasn't rated a LO) with zeros, which is legal now
         df = df.pivot_table(index = 'userId', columns = 'loId', values = 'rating').fillna(0)
-        # if there were movies, having only equal ratings (ie, all 4.0)
+        # if there were LOs, having only equal ratings (ie, all 4.0)
         # then we can't really recommend anything to them, hence removing
         df = df.loc[:, (df != 0).any(axis = 0)]
         # here we go, let's turn DataFrame into sparse matrix, normalize ratings,
@@ -78,7 +78,7 @@ class ShortestPath():
         print(len(df))
         # once sorted, we can remove timestamp (will save us a couple of bytes)
         df = df.drop(labels = 'timestamp', axis = 1)
-        # mids stands for movie IDs (I'm yet another lazy coder)
+        # mids stands for LO IDs (I'm yet another lazy coder)
         self.mids = df.index.get_level_values('loId').unique()
         df = df.reset_index(level = 'loId')
 
@@ -90,7 +90,7 @@ class ShortestPath():
             if isinstance(path, pd.DataFrame):
                 # otherwise means a user made only one rating, not quite helpful here
                 for m1, m2 in zip(path[:-1].itertuples(), path[1:].itertuples()):
-                    # for each pair of rated movie and next rated movie
+                    # for each pair of rated LO and next rated LO
                     al.setdefault(m1.loId, {}).setdefault(m2.loId, 0)
                     # we see what a user thinks of how similar they are,
                     # the more both ratings are close to each other - the higher
@@ -149,10 +149,10 @@ class ShortestPath():
                    
 
         for mid in al:
-            # let's make a list for each movie in adjacency list, so that
+            # let's make a list for each LO in adjacency list, so that
             # adjacency list becomes a list indeed, along the way, we have to
             # inverse summed up similarity, so that the higher is the similarity -
-            # the shorter is the length of an edge in movies graph
+            # the shorter is the length of an edge in LOs graph
             al[mid] = list(map(lambda kv: (kv[0], -kv[1]), al[mid].items())) #inverte los signos de los pesos a negativo para hacer que los valores mas grandes sean mas pequeños, haciendo asi la distancia mas corta
             # yes, list is required to be sorted from closest to farthest
             al[mid].sort(key = lambda r: r[1])
@@ -216,7 +216,7 @@ class ShortestPath():
                         # otherwise, just put it in the queue
                         e[av[0]] = [alt, av[0]]
                         heappush(q, e[av[0]])
-            # of course, recommendation of a movie to itself is way too obvious
+            # of course, recommendation of a LO to itself is way too obvious
             del r[mid]
             # listify and sort other recommendaions
             res[mid] = list(r.items())

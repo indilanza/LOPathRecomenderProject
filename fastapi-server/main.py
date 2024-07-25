@@ -11,22 +11,30 @@ sys.path.append('/home/indira/eDiplomaProyect')
 
 # Importar tu biblioteca local
 
-import sys
-sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\eDiplomaProyect\\learning_object_path_recommender')
+#import sys
+#sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\eDiplomaProyect\\learning_object_path_recommender')
 
-from learning_object_path_recommender import *  # o cualquier otro import necesario
-from learning_object_path_recommender.recommend import get_recs_for
-from learning_object_path_recommender.recommend import *
+#from learning_object_path_recommender import *  # o cualquier otro import necesario
+#from learning_object_path_recommender.recommend import get_recs_for
+#from learning_object_path_recommender.recommend import *
 
+import os
 
-#from learning_object_path_recommender.learning_object_path_recommender import *
-#from learning_object_path_recommender.learning_object_path_recommender.recommend import get_recs_for
-#from learning_object_path_recommender.learning_object_path_recommender.recommend import *
-# Resto de tu código aquí...
+from learning_object_path_recommender.recommend import Recommender
 
 
 
 app = FastAPI()
+
+script_dir = os.path.dirname(os.path.realpath(__file__))
+base_dir = os.path.abspath(os.path.join(script_dir, '..', 'learning_object_path_recommender'))
+
+los_csv = os.path.join(base_dir, 'outputs', 'Lo_data.csv')
+ratings_csv = os.path.join(base_dir, 'outputs', 'Lo_ratings_seq.csv')
+
+
+recommender = Recommender(los_csv, ratings_csv) #By default the parameters are "los_csv, ratings_csv, limit=5, interval=21600" and can be changed if needed
+
 
 
 # Configurar CORS
@@ -98,18 +106,7 @@ async def append_log(logLine: MoodleLogLine):
     except Exception as e:
         return {"error": str(e)}
     
-"""
-@app.post("/logs/")
-async def receive_logs(log_entry: LogEntry):
-    # Guardar el log en un archivo CSV
-    csv_file = '../moodle_logs/student_logs.csv'
-    with open(csv_file, mode='a') as file:
-        writer = csv.DictWriter(file, fieldnames=log_entry.model_dump().keys())
-        if file.tell() == 0:
-            writer.writeheader()
-        writer.writerow(log_entry.model_dump())
 
-    return {"message": "Log entry received and saved successfully"}  """
 
 @app.post("/logs/")
 async def receive_logs(logs: list[LogEntry]):
@@ -310,57 +307,25 @@ async def send_learning_objects(learning_objects: List[str]):
                 return {"error": str(e)}
             
 
-
-def recommend_lo_old(learning_object_id: int):
-                
-                return [{"id": 1, "title": "Introducción a la programación matemática"},{"id": 2, "title": "Introducción a la inteligencia artificial"}]
-                
+               
 
 
 
 def recommend_lo(learning_object_id: int):
-                df_recs=get_recs_for(learning_object_id)
-                #este es el formato del dataframe que se obtiene de la función get_recs_for
-                #recs = recs.rename(columns = {'title_c': 'Cosine similarity alg:', 'title_s': 'Shortest path alg:'})
+                #df_recs=get_recs_for(learning_object_id)
+                df_recs = recommender.get_recs_for(learning_object_id)
 
-                # Convertir el DataFrame a JSON
-                #recs_json = df_recs.to_json(orient='records')
                 
                 return df_recs
 
 
-"""             
-@app.post("/process_learning_object/{learning_object_id}")
-async def process_learning_object(learning_object_id: int):
-    # Llamar a la función dada y obtener el resultado
-    result = recommend_lo(learning_object_id)  # Reemplaza "function_name" con el nombre de la función adecuada
-    
-    # Verificar si el resultado es una lista de objetos de aprendizaje válidos
-    if isinstance(result, list) and all(isinstance(obj, dict) and "id" in obj and "title" in obj for obj in result):
-        # Enviar el resultado a otro servicio web
-        async with httpx.AsyncClient() as client:
-            response = await client.post("http://example.com/learning_objects", json=result)
-        
-        # Verificar el estado de la respuesta
-        if response.status_code == 200:
-            return response.json()
-        else:
-            raise HTTPException(status_code=response.status_code, detail="Error al enviar los objetos de aprendizaje")
-    else:
-        # Devolver un error si el resultado no es válido
-        raise HTTPException(status_code=500, detail="El resultado no es válido")"""
+
     
 
 @app.get("/recommend/{learning_object_id}")
 async def recommend(learning_object_id: int):
     # Llamar a la función recommend_lo y obtener el resultado
     result_df = recommend_lo(learning_object_id)
-
-    #Ejemplo de los datos que se obtienen en el dataframe:
-    # {"IDc:":[4527981,4527986,4527988,4527987,4527992],"Cosine similarity alg:":["Archivo: Problemas Tema 1","Archivo: Problemas con conjuntos","Archivo: Ejercicios cortos con pilas, co ... icolas","Archivo: Boletín de problemas del tema 2","Archivo: Boletín de problemas del tema 3"],"IDs:":[4528013,4617667,4619646,4625677,4630203],"Shortest path alg:":["Carpeta: Práctica 1 (29 de Septiembre y  ... tubre)","Carpeta: Práctica 2 (6 y 8 de Octubre)","Carpeta: Practica 3","URL: Resumen de notas","Carpeta: Práctica 5"]}
-    #IDc son los ids recomendados por el algoritmo de similitud coseno
-    #IDs son los ids recomendados por el algoritmo de camino más corto
-    print(result_df)
 
     # Convertir el DataFrame a un diccionario con listas
     result_dict = result_df.to_dict(orient='list') 
@@ -371,7 +336,6 @@ async def recommend(learning_object_id: int):
     'IDs:': [4528013, 4617667, 4619646, 4625677, 4630203],
     'Shortest path alg:': ['Carpeta: Práctica 1 (29 de Septiembre y 1 de Octubre)', 'Carpeta: Práctica 2 (6 y 8 de Octubre)', 'Carpeta: Practica 3', 'URL: Resumen de notas', 'Carpeta: Práctica 5']
     }"""
-
     
     # Verificar si el resultado es un diccionario válido
     if isinstance(result_dict, dict) and all(isinstance(value, list) for value in result_dict.values()):
