@@ -1,6 +1,6 @@
 # Proyecto de Recomendación
 
-## Diagrama de Clases
+## Diagrama de Clases y métodos principales
 
 ![Diagrama de Clases](/imgs/UMLClasses.png)
 
