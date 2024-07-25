@@ -1,0 +1,43 @@
+loId,title,category,order
+4916822,URL: Sala meet para la clase on-line,URL,1
+4916824,Archivo: Introducción al curso,Recurso,2
+4916826,Archivo: DataScienceDataScientists,Recurso,3
+4916829,Archivo: Datos ordenados (Tidy Data),Recurso,4
+4916831,Archivo: Pandas Cheat Sheet,Recurso,5
+4916836,Archivo: Trabajo refuerzo/previo (Tiempo estimado menos de 45'),Recurso,6
+4916837,Archivo: SQL,Recurso,7
+4932386,Archivo: Ejemplo DER (recurso en pdf),Recurso,8
+4916838,Archivo: Apuntes clase 1,Recurso,9
+4916846,Archivo: Ejercicios de SQL 1,Recurso,10
+4916840,Archivo: Apuntes clase 2,Recurso,11
+4916848,Archivo: Ejercicios de SQL 2,Recurso,12
+4916841,Archivo: Apuntes clase 3,Recurso,13
+4916844,Archivo: Caso de estudio Segurito SA y ejercicios,Recurso,14
+4916850,Archivo: Base de datos Segurito en formato SQLite (Nueva versión),Recurso,15
+4944124,Archivo: XML Presentación,Recurso,16
+4916852,Archivo: Introducción a XML,Recurso,17
+4916853,URL: Introduction to XML,URL,18
+4916854,URL: Ejemplos de documentos XML,URL,19
+4916855,URL: Formato de datos CSV,URL,20
+4916856,Archivo: Apuntes XPath,Recurso,21
+4944103,Archivo: Ejercicios con XPath,Recurso,22
+4916859,Archivo: Fichero XML para los ejercicios con XPath,Recurso,23
+4944125,Archivo: Enunciado de la práctica con XML,Recurso,24
+4916862,Archivo: Fichero XML de entrada,Recurso,25
+4916864,Archivo: Data Services,Recurso,26
+4916865,Archivo: Ejemplos de patrones en KNIME para trabajar con servicios web,Recurso,27
+4916866,URL: Servicios REST con Python,URL,28
+4916871,Archivo: Open/Linked Data,Recurso,29
+4916873,Archivo: Ejemplos de DBPedia - QUALD dataset,Recurso,30
+4916876,Archivo: NoSQL,Recurso,31
+4916877,URL: New SQL,URL,32
+4916881,Archivo: Pandas: Herramienta para procesos ETL - Python,Recurso,33
+4916883,Archivo: ETL - Resumen nodos Knime (para repasar),Recurso,34
+4916884,Archivo: ETL - Actividades 1 y 2,Recurso,35
+4916886,Archivo: ETL -  Actividad 3,Recurso,36
+4916888,Carpeta: Datasets,Carpeta,37
+4916891,Archivo: Actividad 4. Tutorial Pandas,Recurso,38
+
+
+
+

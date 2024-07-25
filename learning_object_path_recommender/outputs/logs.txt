@@ -1,0 +1,1152 @@
+Date and Time: 2024-05-02 17:12:30.181498
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 5179061
+Actual: [5179061, 5179062, 5179065, 5179068, 5179069]
+Predicted: [5168417, 5175449, 5168415, 5185611, 5168421]
+
+Date and Time: 2024-05-02 17:14:11.769562
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 5179061
+Actual: [5179061, 5179062, 5179065, 5179068, 5179069]
+Predicted: [5185611, 5179711, 5137347, 5115516, 5106329]
+
+Date and Time: 2024-05-02 17:17:00.429935
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.8
+Node from: 5106327
+Actual: [5106327, 5106328, 5106329, 5106330, 5106332]
+Predicted: [5106329, 5106328, 5106330, 5106332, 5106398]
+
+Date and Time: 2024-05-02 17:17:00.430981
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 5106327
+Actual: [5106327, 5106328, 5106329, 5106330, 5106332]
+Predicted: [5106330, 5127003, 5106929, 5113976, 5158163]
+
+Date and Time: 2024-05-02 17:17:24.769686
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.76
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106330, 5106332, 5106327, 5106398]
+
+Date and Time: 2024-05-02 17:17:24.770174
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106330, 5106327, 5113973, 5137347]
+
+Date and Time: 2024-05-02 17:18:41.000898
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6
+Node from: 5113990
+Actual: [5113990, 5113991, 5113992, 5113993, 5113994]
+Predicted: [5113991, 5113992, 5113993, 5142692, 5142691]
+
+Date and Time: 2024-05-02 17:18:41.002317
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 5113990
+Actual: [5113990, 5113991, 5113992, 5113993, 5113994]
+Predicted: [5113991, 5158163, 5113976, 5127003, 5106929]
+
+Date and Time: 2024-05-02 17:20:23.463351
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-02 17:20:23.464370
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4527992, 4625677, 4630203, 4636638]
+
+Date and Time: 2024-05-02 17:20:37.089273
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.16666666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527997, 4527998]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-02 17:20:37.090312
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527997, 4527998]
+Predicted: [4527992, 4625677, 4630203, 4636638, 4528011]
+
+Date and Time: 2024-05-02 17:20:50.776182
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.1
+Node from: 4527992
+Actual: [4527992, 4527997, 4527998, 4527999, 4528003]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-02 17:20:50.779972
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527992
+Actual: [4527992, 4527997, 4527998, 4527999, 4528003]
+Predicted: [4625677, 4630203, 4636638, 4528013, 4528011]
+
+Date and Time: 2024-05-02 17:21:03.090361
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.1
+Node from: 4527992
+Actual: [4527992, 4527997, 4527998, 4527999, 4528003]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-02 17:21:03.091897
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527992
+Actual: [4527992, 4527997, 4527998, 4527999, 4528003]
+Predicted: [4625677, 4630203, 4636638, 4528013, 4528011]
+
+Date and Time: 2024-05-03 11:53:54.812887
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916826, 4944125, 4916844, 4916856, 4916829]
+
+Date and Time: 2024-05-03 11:53:54.813789
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916826, 4916829, 4916822, 4944103, 4916844]
+
+Date and Time: 2024-05-03 11:55:08.166791
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.06666666666666667
+Node from: 4916852
+Actual: [4916852, 4916853, 4916854, 4916855, 4916856]
+Predicted: [4916840, 4916841, 4916853, 4916850, 4916848]
+
+Date and Time: 2024-05-03 11:55:08.167807
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4916852
+Actual: [4916852, 4916853, 4916854, 4916855, 4916856]
+Predicted: [4916862, 4916864, 4916865, 4916866, 4916871]
+
+Date and Time: 2024-05-03 11:56:08.479218
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4932386
+Actual: [4932386, 4916838, 4916846, 4916840, 4916848]
+Predicted: [4916888, 4916886, 4916884, 4916871, 4916883]
+
+Date and Time: 2024-05-03 11:56:08.480231
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4932386
+Actual: [4932386, 4916838, 4916846, 4916840, 4916848]
+Predicted: [4916844, 4944103, 4916837, 4916836, 4916850]
+
+Date and Time: 2024-05-03 11:56:28.637529
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 11:56:28.638592
+Method: shortest path Average Precision at 5 recommended nodes: 0.3833333333333333
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4944124, 4916840, 4916848, 4916841, 4916822]
+
+Date and Time: 2024-05-03 11:59:24.180662
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916826, 4916838, 4916837, 4916831, 4916836]
+
+Date and Time: 2024-05-03 11:59:24.180662
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916831, 4916836, 4916837, 4916848, 4916841]
+
+Date and Time: 2024-05-03 12:00:44.438797
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:00:44.438797
+Method: shortest path Average Precision at 5 recommended nodes: 0.55
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:06:36.195290
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916844
+Actual: [4916844, 4916850, 4944124, 4916852, 4916853]
+Predicted: [4916846, 4916856, 4916859, 4916848, 4916862]
+
+Date and Time: 2024-05-03 12:06:36.196182
+Method: shortest path Average Precision at 5 recommended nodes: 0.3
+Node from: 4916844
+Actual: [4916844, 4916850, 4944124, 4916852, 4916853]
+Predicted: [4916850, 4916846, 4916848, 4944124, 4916841]
+
+Date and Time: 2024-05-03 12:06:59.046202
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916844
+Actual: [4916844, 4916850, 4944124, 4916852, 4916853]
+Predicted: [4916846, 4916856, 4916859, 4916848, 4916862]
+
+Date and Time: 2024-05-03 12:06:59.048202
+Method: shortest path Average Precision at 5 recommended nodes: 0.3
+Node from: 4916844
+Actual: [4916844, 4916850, 4944124, 4916852, 4916853]
+Predicted: [4916850, 4916846, 4916848, 4944124, 4916841]
+
+Date and Time: 2024-05-03 12:07:50.286551
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2
+Node from: 4916837
+Actual: [4916837, 4932386, 4916838, 4916846, 4916840]
+Predicted: [4916838, 4916836, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:07:50.287549
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4916837
+Actual: [4916837, 4932386, 4916838, 4916846, 4916840]
+Predicted: [4916848, 4944124, 4916841, 4916852, 4916853]
+
+Date and Time: 2024-05-03 12:08:00.206853
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916846
+Actual: [4916846, 4916840, 4916848, 4916841, 4916844]
+Predicted: [4916844, 4916848, 4916862, 4916859, 4916856]
+
+Date and Time: 2024-05-03 12:08:00.207852
+Method: shortest path Average Precision at 5 recommended nodes: 0.3333333333333333
+Node from: 4916846
+Actual: [4916846, 4916840, 4916848, 4916841, 4916844]
+Predicted: [4916848, 4944124, 4916841, 4916852, 4916853]
+
+Date and Time: 2024-05-03 12:09:47.838344
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916856
+Actual: [4916856, 4944103, 4916859, 4944125, 4916862]
+Predicted: [4916859, 4916862, 4916844, 4916864, 4916854]
+
+Date and Time: 2024-05-03 12:09:47.839357
+Method: shortest path Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 4916856
+Actual: [4916856, 4944103, 4916859, 4944125, 4916862]
+Predicted: [4916859, 4916853, 4916854, 4916855, 4944125]
+
+Date and Time: 2024-05-03 12:10:51.887944
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916826, 4916838, 4916837, 4916831, 4916836]
+
+Date and Time: 2024-05-03 12:10:51.887944
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916831, 4916836, 4916837, 4916848, 4916841]
+
+Date and Time: 2024-05-03 12:15:15.511917
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916826, 4916838, 4916837, 4916831, 4916836]
+
+Date and Time: 2024-05-03 12:15:15.512924
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916831, 4916836, 4916837, 4916848, 4916841]
+
+Date and Time: 2024-05-03 12:16:08.272387
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916838, 4916837, 4916831, 4916853, 4916841]
+
+Date and Time: 2024-05-03 12:16:08.273398
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916837, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:16:45.016336
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916838, 4916837, 4916831, 4916853, 4916841]
+
+Date and Time: 2024-05-03 12:16:45.017343
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916837, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:16:55.047882
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916838, 4916837, 4916831, 4916853, 4916841]
+
+Date and Time: 2024-05-03 12:16:55.048928
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916837, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:17:05.638062
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916838, 4916837, 4916831, 4916853, 4916841]
+
+Date and Time: 2024-05-03 12:17:05.639019
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4916836
+Actual: [4916836, 4916837, 4932386, 4916838, 4916846]
+Predicted: [4916837, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:17:18.358542
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:17:18.359559
+Method: shortest path Average Precision at 5 recommended nodes: 0.55
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:31:50.080786
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:31:50.083348
+Method: shortest path Average Precision at 5 recommended nodes: 0.55
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4944124, 4916841, 4916852]
+
+Date and Time: 2024-05-03 12:32:03.412069
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.16666666666666666
+Node from: 4916841
+Actual: [4916841, 4916844, 4916850, 4944124, 4916852]
+Predicted: [4916840, 4916853, 4916852, 4916850, 4916838]
+
+Date and Time: 2024-05-03 12:32:03.413085
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916841
+Actual: [4916841, 4916844, 4916850, 4944124, 4916852]
+Predicted: [4944124, 4916852, 4916853, 4916854, 4916855]
+
+Date and Time: 2024-05-03 12:32:13.087188
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916841, 4916853, 4916852, 4916850, 4916838]
+
+Date and Time: 2024-05-03 12:32:13.087374
+Method: shortest path Average Precision at 5 recommended nodes: 0.3333333333333333
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916848, 4944124, 4916841, 4916852, 4916853]
+
+Date and Time: 2024-05-03 12:33:54.319553
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:33:54.320039
+Method: shortest path Average Precision at 5 recommended nodes: 0.06666666666666667
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916831, 4916837, 4916846, 4944103, 4932386]
+
+Date and Time: 2024-05-03 12:34:44.357426
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916841, 4916853, 4916852, 4916850, 4916838]
+
+Date and Time: 2024-05-03 12:34:44.358911
+Method: shortest path Average Precision at 5 recommended nodes: 0.13
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916822, 4916856, 4944124, 4916848, 4916841]
+
+Date and Time: 2024-05-03 12:39:54.200363
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:39:54.201383
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4916841, 4944124, 4916852]
+
+Date and Time: 2024-05-03 12:49:32.689326
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:49:32.690333
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4916841, 4944124, 4916852]
+
+Date and Time: 2024-05-03 12:50:00.806873
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916841, 4916853, 4916852, 4916850, 4916838]
+
+Date and Time: 2024-05-03 12:50:00.807903
+Method: shortest path Average Precision at 5 recommended nodes: 0.42000000000000004
+Node from: 4916840
+Actual: [4916840, 4916848, 4916841, 4916844, 4916850]
+Predicted: [4916848, 4916838, 4932386, 4916844, 4916850]
+
+Date and Time: 2024-05-03 12:50:19.359363
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.16666666666666666
+Node from: 4916841
+Actual: [4916841, 4916844, 4916850, 4944124, 4916852]
+Predicted: [4916840, 4916853, 4916852, 4916850, 4916838]
+
+Date and Time: 2024-05-03 12:50:19.360379
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916841
+Actual: [4916841, 4916844, 4916850, 4944124, 4916852]
+Predicted: [4944124, 4916852, 4916853, 4916854, 4916855]
+
+Date and Time: 2024-05-03 12:50:46.117916
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916856
+Actual: [4916856, 4944103, 4916859, 4944125, 4916862]
+Predicted: [4916859, 4916862, 4916844, 4916864, 4916854]
+
+Date and Time: 2024-05-03 12:50:46.118928
+Method: shortest path Average Precision at 5 recommended nodes: 0.8
+Node from: 4916856
+Actual: [4916856, 4944103, 4916859, 4944125, 4916862]
+Predicted: [4944103, 4916859, 4944125, 4916862, 4916864]
+
+Date and Time: 2024-05-03 12:51:08.909031
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916822
+Actual: [4916822, 4916824, 4916826, 4916829, 4916831]
+Predicted: []
+
+Date and Time: 2024-05-03 12:51:08.910067
+Method: shortest path Average Precision at 5 recommended nodes: 0.8
+Node from: 4916822
+Actual: [4916822, 4916824, 4916826, 4916829, 4916831]
+Predicted: [4916824, 4916826, 4916829, 4916831, 4916836]
+
+Date and Time: 2024-05-03 12:51:57.995357
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916826, 4944125, 4916844, 4916856, 4916829]
+
+Date and Time: 2024-05-03 12:51:57.996373
+Method: shortest path Average Precision at 5 recommended nodes: 0.8
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916826, 4916829, 4916831, 4916836, 4916837]
+
+Date and Time: 2024-05-03 12:52:23.278754
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916826, 4916838, 4916837, 4916831, 4916836]
+
+Date and Time: 2024-05-03 12:52:23.278754
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916829
+Actual: [4916829, 4916831, 4916836, 4916837, 4932386]
+Predicted: [4916831, 4916836, 4916837, 4916848, 4916838]
+
+Date and Time: 2024-05-03 12:53:32.261375
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916850
+Actual: [4916850, 4944124, 4916852, 4916853, 4916854]
+Predicted: [4916848, 4916846, 4916871, 4916865, 4916864]
+
+Date and Time: 2024-05-03 12:53:32.262993
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4916850
+Actual: [4916850, 4944124, 4916852, 4916853, 4916854]
+Predicted: [4916846, 4916848, 4916838, 4916840, 4916841]
+
+Date and Time: 2024-05-03 12:54:08.567662
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916836, 4916837, 4916831, 4916829, 4916853]
+
+Date and Time: 2024-05-03 12:54:08.569064
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4916838
+Actual: [4916838, 4916846, 4916840, 4916848, 4916841]
+Predicted: [4916840, 4916848, 4916841, 4944124, 4916852]
+
+Date and Time: 2024-05-03 12:54:24.055130
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916846
+Actual: [4916846, 4916840, 4916848, 4916841, 4916844]
+Predicted: [4916844, 4916848, 4916862, 4916859, 4916856]
+
+Date and Time: 2024-05-03 12:54:24.056292
+Method: shortest path Average Precision at 5 recommended nodes: 0.4833333333333333
+Node from: 4916846
+Actual: [4916846, 4916840, 4916848, 4916841, 4916844]
+Predicted: [4916848, 4916838, 4916840, 4916841, 4944124]
+
+Date and Time: 2024-05-03 12:54:49.733585
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2333333333333333
+Node from: 4916848
+Actual: [4916848, 4916841, 4916844, 4916850, 4944124]
+Predicted: [4916846, 4916850, 4916844, 4916864, 4916862]
+
+Date and Time: 2024-05-03 12:54:49.735110
+Method: shortest path Average Precision at 5 recommended nodes: 0.16666666666666666
+Node from: 4916848
+Actual: [4916848, 4916841, 4916844, 4916850, 4944124]
+Predicted: [4916838, 4916840, 4916841, 4944124, 4916852]
+
+Date and Time: 2024-05-03 12:55:20.217281
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2
+Node from: 4916877
+Actual: [4916877, 4916881, 4916883, 4916884, 4916886]
+Predicted: [4916876, 4916881, 4916891, 4916883, 4944124]
+
+Date and Time: 2024-05-03 12:55:20.218969
+Method: shortest path Average Precision at 5 recommended nodes: 0.2333333333333333
+Node from: 4916877
+Actual: [4916877, 4916881, 4916883, 4916884, 4916886]
+Predicted: [4916876, 4916886, 4916881, 4916891, 4916873]
+
+Date and Time: 2024-05-03 12:55:56.231505
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.04
+Node from: 4916881
+Actual: [4916881, 4916883, 4916884, 4916886, 4916888]
+Predicted: [4916876, 4916877, 4944124, 4916891, 4916883]
+
+Date and Time: 2024-05-03 12:55:56.232658
+Method: shortest path Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4916881
+Actual: [4916881, 4916883, 4916884, 4916886, 4916888]
+Predicted: [4916891, 4916873, 4916883, 4916884, 4916888]
+
+Date and Time: 2024-05-03 12:56:46.767726
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4944124
+Actual: [4944124, 4916852, 4916853, 4916854, 4916855]
+Predicted: [4916883, 4944103, 4916891, 4916884, 4916881]
+
+Date and Time: 2024-05-03 12:56:46.768745
+Method: shortest path Average Precision at 5 recommended nodes: 0.8
+Node from: 4944124
+Actual: [4944124, 4916852, 4916853, 4916854, 4916855]
+Predicted: [4916852, 4916853, 4916854, 4916855, 4916856]
+
+Date and Time: 2024-05-03 12:59:36.799797
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 12:59:36.801258
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625626, 4630203]
+
+Date and Time: 2024-05-03 12:59:58.728912
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 12:59:58.729931
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4617667, 4619646, 4625626, 4630203, 4636638]
+
+Date and Time: 2024-05-03 13:02:43.137017
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:02:43.140556
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625626, 4630203]
+
+Date and Time: 2024-05-03 13:05:57.831607
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 13:05:57.833187
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4617667, 4619646, 4625626, 4630203, 4636638]
+
+Date and Time: 2024-05-03 13:06:18.097339
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-03 13:06:18.098489
+Method: shortest path Average Precision at 5 recommended nodes: 0.13
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4636638, 4644770, 4649820, 4528005, 4527999]
+
+Date and Time: 2024-05-03 13:11:11.527851
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:11:11.528677
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625677, 4625626]
+
+Date and Time: 2024-05-03 13:16:14.114210
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:16:14.115722
+Method: shortest path Average Precision at 5 recommended nodes: 0.1
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4636638, 4527992, 4625677, 4644770, 4528005]
+
+Date and Time: 2024-05-03 13:20:23.313335
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:20:23.314346
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625677, 4625626]
+
+Date and Time: 2024-05-03 13:21:05.959193
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 13:21:05.959519
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4617667, 4619646, 4625677, 4625626, 4630203]
+
+Date and Time: 2024-05-03 13:21:45.726935
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-03 13:21:45.727953
+Method: shortest path Average Precision at 5 recommended nodes: 0.13
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4636638, 4644770, 4649820, 4528005, 4527999]
+
+Date and Time: 2024-05-03 13:23:02.982409
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:23:02.983852
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625677, 4625626]
+
+Date and Time: 2024-05-03 13:23:16.615499
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 13:23:16.616546
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4617667, 4619646, 4625677, 4625626, 4630203]
+
+Date and Time: 2024-05-03 13:24:31.449361
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-03 13:24:31.450366
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4649820, 4527968, 4528013]
+
+Date and Time: 2024-05-03 13:25:00.784438
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4528005, 4527992, 4527987, 4644770, 4528012]
+
+Date and Time: 2024-05-03 13:25:00.786468
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4528005, 4527992, 4636638, 4644770, 4649820]
+
+Date and Time: 2024-05-03 13:25:34.703871
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4528012
+Actual: [4528012, 4528013, 4589419, 4604389, 4604398]
+Predicted: [4528013, 4617667, 4527999, 4604389, 4619646]
+
+Date and Time: 2024-05-03 13:25:34.704910
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4528012
+Actual: [4528012, 4528013, 4589419, 4604389, 4604398]
+Predicted: [4617667, 4619646, 4625677, 4625626, 4630203]
+
+Date and Time: 2024-05-03 13:27:19.110206
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 13:27:19.111686
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4527986, 4527988, 4604389, 4617667]
+
+Date and Time: 2024-05-03 13:27:48.249491
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 13:27:48.250495
+Method: shortest path Average Precision at 5 recommended nodes: 0.1
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527988, 4604389, 4617667, 4619646]
+
+Date and Time: 2024-05-03 13:29:48.431142
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-03 13:29:48.431483
+Method: shortest path Average Precision at 5 recommended nodes: 0.55
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4649820, 4527998, 4527966]
+
+Date and Time: 2024-05-03 13:30:17.656938
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4528005, 4527992, 4527987, 4644770, 4528012]
+
+Date and Time: 2024-05-03 13:30:17.658967
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4528005, 4649820, 4527998, 4527966, 4527968]
+
+Date and Time: 2024-05-03 13:31:41.000420
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 13:31:41.001436
+Method: shortest path Average Precision at 5 recommended nodes: 0.1
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527988, 4604389, 4617667, 4619646]
+
+Date and Time: 2024-05-03 14:04:49.582533
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527986, 4527968, 4527987, 4527988, 4527992]
+
+Date and Time: 2024-05-03 14:04:49.598085
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4617667, 4619646, 4625626, 4630203]
+
+Date and Time: 2024-05-03 14:04:58.264618
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2866666666666666
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527986, 4527981, 4527992, 4527988, 4527999]
+
+Date and Time: 2024-05-03 14:04:58.265632
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4617667, 4619646, 4625626, 4630203, 4636638]
+
+Date and Time: 2024-05-03 14:05:08.966465
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4528005, 4527999, 4527987, 4630203, 4619646]
+
+Date and Time: 2024-05-03 14:05:08.967466
+Method: shortest path Average Precision at 5 recommended nodes: 0.13
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4636638, 4644770, 4649820, 4528005, 4527999]
+
+Date and Time: 2024-05-06 09:52:40.345321
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.35333333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4589419, 4527992, 4527988, 4604398, 4527986]
+
+Date and Time: 2024-05-06 09:52:40.345693
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4527992, 4527999, 4528005, 4625677]
+
+Date and Time: 2024-05-06 09:53:33.960733
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4833333333333333
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527992, 4527981, 4527988, 4527999, 4527986]
+
+Date and Time: 2024-05-06 09:53:33.962593
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527992, 4527999, 4528005, 4625677, 4527968]
+
+Date and Time: 2024-05-06 09:56:21.828106
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4527987, 4527981, 4589419]
+
+Date and Time: 2024-05-06 09:56:21.829125
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4625677, 4527968, 4528013]
+
+Date and Time: 2024-05-06 09:56:32.595138
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4528005
+Actual: [4528005, 4528012, 4528013, 4589419, 4604389]
+Predicted: [4527999, 4527992, 4644770, 4649820, 4636638]
+
+Date and Time: 2024-05-06 09:56:32.596170
+Method: shortest path Average Precision at 5 recommended nodes: 0.04
+Node from: 4528005
+Actual: [4528005, 4528012, 4528013, 4589419, 4604389]
+Predicted: [4527999, 4527992, 4527987, 4527986, 4604389]
+
+Date and Time: 2024-05-06 09:57:26.097380
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.18
+Node from: 4527986
+Actual: [4527986, 4527987, 4527988, 4527992, 4527998]
+Predicted: [4604389, 4527988, 4589419, 4527981, 4527987]
+
+Date and Time: 2024-05-06 09:57:26.100421
+Method: shortest path Average Precision at 5 recommended nodes: 0.3833333333333333
+Node from: 4527986
+Actual: [4527986, 4527987, 4527988, 4527992, 4527998]
+Predicted: [4604389, 4527988, 4527987, 4527992, 4527999]
+
+Date and Time: 2024-05-06 09:57:48.443723
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2
+Node from: 4528012
+Actual: [4528012, 4528013, 4589419, 4604389, 4604398]
+Predicted: [4528013, 4617667, 4630203, 4619646, 4625626]
+
+Date and Time: 2024-05-06 09:57:48.444758
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 4528012
+Actual: [4528012, 4528013, 4589419, 4604389, 4604398]
+Predicted: [4528013, 4617667, 4619646, 4625626, 4625677]
+
+Date and Time: 2024-05-06 10:11:34.851406
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.35333333333333333
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4589419, 4527992, 4527988, 4604398, 4527986]
+
+Date and Time: 2024-05-06 10:11:34.852424
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527981
+Actual: [4527981, 4527986, 4527987, 4527988, 4527992]
+Predicted: [4527987, 4527992, 4527999, 4528005, 4625677]
+
+Date and Time: 2024-05-06 10:11:44.114330
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4833333333333333
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527992, 4527981, 4527988, 4527999, 4527986]
+
+Date and Time: 2024-05-06 10:11:44.116032
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527987
+Actual: [4527987, 4527988, 4527992, 4527998, 4527999]
+Predicted: [4527992, 4527999, 4528005, 4625677, 4527968]
+
+Date and Time: 2024-05-06 10:12:02.673591
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4527987, 4527981, 4589419]
+
+Date and Time: 2024-05-06 10:12:02.673591
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4527992
+Actual: [4527992, 4527998, 4527999, 4528005, 4528012]
+Predicted: [4527999, 4528005, 4625677, 4527968, 4528013]
+
+Date and Time: 2024-05-06 10:12:17.996324
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.1
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4527992, 4528005, 4527981, 4527988, 4527987]
+
+Date and Time: 2024-05-06 10:12:17.996324
+Method: shortest path Average Precision at 5 recommended nodes: 0.3
+Node from: 4527999
+Actual: [4527999, 4528005, 4528012, 4528013, 4589419]
+Predicted: [4528005, 4625677, 4527968, 4528013, 4617667]
+
+Date and Time: 2024-05-06 10:18:11.800906
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916836, 4916855, 4916888, 4916831, 4916846]
+
+Date and Time: 2024-05-06 10:18:11.801909
+Method: shortest path Average Precision at 5 recommended nodes: 0.6433333333333333
+Node from: 4916824
+Actual: [4916824, 4916826, 4916829, 4916831, 4916836]
+Predicted: [4916826, 4916822, 4916829, 4916831, 4916836]
+
+Date and Time: 2024-05-06 10:22:18.321908
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.3
+Node from: 4916852
+Actual: [4916852, 4916853, 4916854, 4916855, 4916856]
+Predicted: [4916853, 4916888, 4916891, 4916855, 4916884]
+
+Date and Time: 2024-05-06 10:22:18.323479
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916852
+Actual: [4916852, 4916853, 4916854, 4916855, 4916856]
+Predicted: [4916853, 4916856, 4944103, 4916859, 4944125]
+
+Date and Time: 2024-05-06 10:24:43.877237
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916846
+Actual: [4916846, 4916848, 4916850, 4916852, 4916853]
+Predicted: [4916859, 4916836, 4916884, 4916888, 4916829]
+
+Date and Time: 2024-05-06 10:24:43.879680
+Method: shortest path Average Precision at 5 recommended nodes: 0.13
+Node from: 4916846
+Actual: [4916846, 4916848, 4916850, 4916852, 4916853]
+Predicted: [4916837, 4932386, 4916844, 4916850, 4916848]
+
+Date and Time: 2024-05-06 10:26:10.203016
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.2
+Node from: 4916848
+Actual: [4916848, 4916850, 4916852, 4916853, 4916854]
+Predicted: [4916850, 4916844, 4932386, 4916855, 4916866]
+
+Date and Time: 2024-05-06 10:26:10.205036
+Method: shortest path Average Precision at 5 recommended nodes: 0.04
+Node from: 4916848
+Actual: [4916848, 4916850, 4916852, 4916853, 4916854]
+Predicted: [4916846, 4916837, 4932386, 4916844, 4916850]
+
+Date and Time: 2024-05-06 10:27:05.538047
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6
+Node from: 4916837
+Actual: [4916837, 4916838, 4916840, 4916841, 4916844]
+Predicted: [4916838, 4916840, 4916841, 4916876, 4916877]
+
+Date and Time: 2024-05-06 10:27:05.538671
+Method: shortest path Average Precision at 5 recommended nodes: 0.1
+Node from: 4916837
+Actual: [4916837, 4916838, 4916840, 4916841, 4916844]
+Predicted: [4932386, 4916844, 4916846, 4916850, 4916848]
+
+Date and Time: 2024-05-06 10:27:26.226224
+Method: Cosine similarity Average Precision at 3 recommended nodes: 0.1111111111111111
+Node from: 4944103
+Actual: [4944103, 4944124, 4944125]
+Predicted: [4916881, 4916859, 4944125, 4916891, 4916836]
+
+Date and Time: 2024-05-06 10:27:26.227384
+Method: shortest path Average Precision at 3 recommended nodes: 0.16666666666666666
+Node from: 4944103
+Actual: [4944103, 4944124, 4944125]
+Predicted: [4916859, 4944125, 4916862, 4916864, 4916865]
+
+Date and Time: 2024-05-06 10:29:41.666776
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 4916881
+Actual: [4916881, 4916883, 4916884, 4916886, 4916888]
+Predicted: [4944103, 4916854, 4916891, 4916836, 4944125]
+
+Date and Time: 2024-05-06 10:29:41.667794
+Method: shortest path Average Precision at 5 recommended nodes: 0.5433333333333333
+Node from: 4916881
+Actual: [4916881, 4916883, 4916884, 4916886, 4916888]
+Predicted: [4916891, 4916888, 4916886, 4916883, 4916884]
+
+Date and Time: 2024-05-06 10:33:55.290821
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 4916884
+Actual: [4916884, 4916886, 4916888, 4916891, 4932386]
+Predicted: [4916888, 4916891, 4916846, 4916856, 4916836]
+
+Date and Time: 2024-05-06 10:33:55.294702
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916884
+Actual: [4916884, 4916886, 4916888, 4916891, 4932386]
+Predicted: [4916888, 4916886, 4916883, 4916864, 4916865]
+
+Date and Time: 2024-05-06 10:35:37.348015
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.05
+Node from: 4916886
+Actual: [4916886, 4916888, 4916891, 4932386, 4944103]
+Predicted: [4916883, 4944124, 4916884, 4916891, 4916854]
+
+Date and Time: 2024-05-06 10:35:37.349045
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 4916886
+Actual: [4916886, 4916888, 4916891, 4932386, 4944103]
+Predicted: [4916888, 4916891, 4916866, 4916864, 4916865]
+
+Date and Time: 2024-05-06 10:37:59.067802
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.06666666666666667
+Node from: 5106327
+Actual: [5106327, 5106328, 5106329, 5106330, 5106332]
+Predicted: [5106412, 5106632, 5106330, 5107014, 5158163]
+
+Date and Time: 2024-05-06 10:37:59.068125
+Method: shortest path Average Precision at 5 recommended nodes: 0.27999999999999997
+Node from: 5106327
+Actual: [5106327, 5106328, 5106329, 5106330, 5106332]
+Predicted: [5106330, 5106398, 5106947, 5115516, 5106328]
+
+Date and Time: 2024-05-06 10:38:35.602825
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106332, 5127008, 5168421, 5150212]
+
+Date and Time: 2024-05-06 10:38:35.602825
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106330, 5106327, 5127003, 5150212]
+
+Date and Time: 2024-05-06 10:45:56.199686
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106332, 5127008, 5168421, 5150212]
+
+Date and Time: 2024-05-06 10:45:56.201712
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 5106328
+Actual: [5106328, 5106329, 5106330, 5106332, 5106398]
+Predicted: [5106329, 5106330, 5106327, 5127003, 5150212]
+
+Date and Time: 2024-05-06 10:47:47.138047
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.06666666666666667
+Node from: 5106329
+Actual: [5106329, 5106330, 5106332, 5106398, 5106412]
+Predicted: [5106328, 5115516, 5106330, 5150212, 5127008]
+
+Date and Time: 2024-05-06 10:47:47.139364
+Method: shortest path Average Precision at 5 recommended nodes: 0.2
+Node from: 5106329
+Actual: [5106329, 5106330, 5106332, 5106398, 5106412]
+Predicted: [5106330, 5106327, 5127003, 5150212, 5127008]
+
+Date and Time: 2024-05-06 10:48:38.831549
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6
+Node from: 5107014
+Actual: [5107014, 5107015, 5107016, 5107017, 5107095]
+Predicted: [5107017, 5107016, 5107015, 5127008, 5150212]
+
+Date and Time: 2024-05-06 10:48:38.835048
+Method: shortest path Average Precision at 5 recommended nodes: 0.6
+Node from: 5107014
+Actual: [5107014, 5107015, 5107016, 5107017, 5107095]
+Predicted: [5107015, 5107016, 5107017, 5106947, 5115516]
+
+Date and Time: 2024-05-06 10:48:51.721998
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.4
+Node from: 5107015
+Actual: [5107015, 5107016, 5107017, 5107095, 5107096]
+Predicted: [5107017, 5107016, 5107014, 5113973, 5127008]
+
+Date and Time: 2024-05-06 10:48:51.723543
+Method: shortest path Average Precision at 5 recommended nodes: 0.4
+Node from: 5107015
+Actual: [5107015, 5107016, 5107017, 5107095, 5107096]
+Predicted: [5107016, 5107017, 5106947, 5115516, 5106328]
+
+Date and Time: 2024-05-06 10:49:03.161373
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0
+Node from: 5107017
+Actual: [5107017, 5107095, 5107096, 5113973, 5113976]
+Predicted: [5107016, 5107014, 5107015, 5127008, 5150212]
+
+Date and Time: 2024-05-06 10:49:03.163061
+Method: shortest path Average Precision at 5 recommended nodes: 0
+Node from: 5107017
+Actual: [5107017, 5107095, 5107096, 5113973, 5113976]
+Predicted: [5106947, 5115516, 5106328, 5106329, 5106330]
+
+Date and Time: 2024-05-06 10:50:25.552746
+Method: Cosine similarity Average Precision at 5 recommended nodes: 0.6
+Node from: 5113990
+Actual: [5113990, 5113991, 5113992, 5113993, 5113994]
+Predicted: [5113991, 5113992, 5113994, 5142692, 5142691]
+
+Date and Time: 2024-05-06 10:50:25.553758
+Method: shortest path Average Precision at 5 recommended nodes: 0.8
+Node from: 5113990
+Actual: [5113990, 5113991, 5113992, 5113993, 5113994]
+Predicted: [5113991, 5113992, 5113993, 5113994, 5142690]
+

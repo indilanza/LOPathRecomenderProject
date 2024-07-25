@@ -1,0 +1,351 @@
+timecreated,userid,relateduserid,contextid,contextinstanceid,contextlevel,component,eventname,other,origin
+1717166750,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166578,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166563,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166407,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166403,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166284,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166212,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166199,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166113,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717166046,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717164013,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717163404,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1717144512,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717144188,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143734,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143691,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143348,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143343,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143061,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717143057,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717142682,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717142348,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717142259,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717141345,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717141332,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717141006,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717140888,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717140879,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717140517,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717140515,6,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1717140480,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717140477,6,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1717140467,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717088836,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717088687,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717087292,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717087286,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1717085905,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085864,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085828,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085178,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085142,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085041,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717085038,6,,25,11,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1717084954,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717084949,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1717066627,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1717066622,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1716806036,6,,2,1,50,core,"\core\event\course_viewed",null,web
+1716804876,6,,2,1,50,core,"\core\event\course_viewed",null,web
+1716804580,6,,2,1,50,core,"\core\event\course_viewed",null,web
+1716804574,6,,2,1,50,core,"\core\event\course_viewed",null,web
+1716804473,6,,2,1,50,core,"\core\event\course_viewed",null,web
+1716802931,6,3,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802929,6,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802917,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1716802911,6,6,55,6,30,core,"\core\event\user_profile_viewed",null,web
+1716802907,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1716802885,3,6,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802880,3,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802860,3,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802856,3,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716802851,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716802843,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716800020,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716799315,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716799243,5,,2,1,50,core,"\core\event\course_viewed",null,web
+1716799230,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716799203,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716799186,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716799181,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716799158,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716799105,5,3,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716799093,5,6,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716799089,5,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716799075,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716798904,5,5,54,5,30,core,"\core\event\user_profile_viewed",null,web
+1716798895,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716798872,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716551671,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716551666,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716551461,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716551454,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716551450,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716551055,6,6,55,6,30,core,"\core\event\user_profile_viewed",null,web
+1716550910,6,6,55,6,30,core,"\core\event\user_profile_viewed",null,web
+1716550907,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1716550884,5,5,54,5,30,core,"\core\event\user_profile_viewed",null,web
+1716550880,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716465647,10,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716453250,5,,29,15,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716453246,5,,28,14,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716452677,5,,27,13,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716452676,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716452671,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716451727,3,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716451721,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716451718,3,,14,2,50,core,"\core\event\section_viewed",null,web
+1716451705,3,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716379291,4,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716379289,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716378958,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716378956,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716378947,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716378944,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716288257,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716288071,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716288063,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716288057,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716277937,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716277870,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716277863,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716277857,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716277854,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716277851,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716277840,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716277836,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716277833,5,,27,13,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716277829,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716277819,5,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716277817,5,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716277812,5,2,54,5,30,core,"\core\event\notification_viewed",null,web
+1716277808,5,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716277792,5,2,54,5,30,core,"\core\event\notification_viewed",null,web
+1716277738,5,2,54,5,30,core,"\core\event\notification_viewed",null,web
+1716277708,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716273408,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716273393,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716272649,3,7,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716272620,3,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716272618,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716272615,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716272597,3,3,2,1,50,gradereport_overview,"\gradereport_overview\event\grade_report_viewed",null,web
+1716272583,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716272579,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716272576,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716272568,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716271990,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716271988,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716271984,3,,2,1,50,core,"\core\event\course_viewed",null,web
+1716271979,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716271964,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215742,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716215724,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215722,4,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716215718,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215716,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215708,4,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716215705,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215703,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Tech Adventure: An Interactive Adventure in Programming and Electronics!""}",web
+1716215687,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716215680,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716215674,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716215671,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716215659,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716215656,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716203349,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716203298,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203293,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203220,3,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716203195,3,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716203193,3,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716203192,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203185,3,,2,1,50,core,"\core\event\course_viewed",null,web
+1716203163,3,3,45,3,30,core,"\core\event\user_profile_viewed",null,web
+1716203159,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203152,3,3,38,24,70,core,"\core\event\competency_evidence_created","{""usercompetencyid"":4,""competencyid"":1,""action"":2,""recommend"":false}",web
+1716203150,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203129,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203120,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716203100,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203096,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1716203090,6,6,55,6,30,core,"\core\event\user_profile_viewed",null,web
+1716203087,6,6,55,6,30,core,"\core\event\dashboard_viewed",null,web
+1716203075,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716203068,4,4,38,24,70,core,"\core\event\competency_evidence_created","{""usercompetencyid"":2,""competencyid"":1,""action"":2,""recommend"":false}",web
+1716203062,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203055,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716203052,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716203001,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716202995,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716202990,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202978,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202974,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716202964,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202702,4,6,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716202699,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716202613,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202605,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716202486,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716202481,4,4,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716202466,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202460,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716202453,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202452,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202444,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716202442,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716202403,6,6,55,6,30,core,"\core\event\user_profile_viewed",null,web
+1716202386,6,,14,2,50,core,"\core\event\course_viewed",null,web
+1716202382,6,6,38,24,70,core,"\core\event\competency_evidence_created","{""usercompetencyid"":3,""competencyid"":1,""action"":2,""recommend"":false}",web
+1716202374,6,,14,2,50,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2"",""stepid"":4,""stepindex"":0}",web
+1716202372,6,,14,2,50,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2""}",web
+1716202368,6,6,55,6,30,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/"",""stepid"":9,""stepindex"":0}",web
+1716202365,6,6,55,6,30,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/""}",web
+1716201986,4,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716201983,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716201819,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716201786,4,,38,24,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716201780,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716201775,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716201771,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716201766,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716201759,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716201755,4,4,38,24,70,core,"\core\event\competency_evidence_created","{""usercompetencyid"":2,""competencyid"":1,""action"":2,""recommend"":false}",web
+1716201752,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716201622,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716201607,6,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,cli
+1716201293,6,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,cli
+1716201197,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716201196,4,2,46,4,30,core,"\core\event\notification_viewed",null,web
+1716201184,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716200639,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716200636,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716200635,4,4,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716200606,4,4,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716200603,4,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1716200602,4,4,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716200566,6,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,cli
+1716200496,4,4,14,2,50,core,"\core\event\competency_user_competency_viewed_in_course","{""competencyid"":1}",web
+1716200474,4,4,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716200453,4,4,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716200452,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716200443,4,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716200439,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716200435,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716200432,4,4,46,4,30,core,"\core\event\user_profile_viewed",null,web
+1716200380,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1716200360,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1716198748,3,,25,11,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1716198695,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195870,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195827,5,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716195809,5,5,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1716195695,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195692,5,,28,14,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716195690,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195681,5,,27,13,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1716195450,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195442,5,,40,26,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1716195314,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1716195295,5,5,54,5,30,core,"\core\event\user_profile_viewed",null,web
+1716195192,5,,2,1,50,core,"\core\event\course_viewed",null,web
+1716195183,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716195180,5,,2,1,50,core,"\core\event\course_viewed",null,web
+1716195135,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1716192316,6,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,cli
+1716191756,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1716191752,3,,2,1,50,core,"\core\event\course_viewed",null,web
+1716191736,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1716190468,6,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716190337,5,,59,31,70,mod_externalcontent,"\mod_externalcontent\event\course_module_viewed",null,web
+1716190335,5,,14,2,50,core,"\core\event\section_viewed",null,web
+1716190330,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947574,5,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1715947534,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947530,5,,2,1,50,core,"\core\event\course_viewed",null,web
+1715947526,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1715947481,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947479,5,5,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1715947476,5,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1715947473,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947471,5,,15,1,70,mod_forum,"\mod_forum\event\course_module_viewed",null,web
+1715947431,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947428,5,,40,26,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715947427,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947423,5,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715947408,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947388,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947378,5,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1715947353,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947350,5,5,14,2,50,gradereport_user,"\gradereport_user\event\grade_report_viewed",null,web
+1715947343,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947329,5,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715947322,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947316,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1715947293,5,5,14,2,50,core,"\core\event\user_profile_viewed","{""courseid"":""2"",""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1715947267,5,5,54,5,30,core,"\core\event\dashboard_viewed",null,web
+1715947236,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947234,3,,2,1,50,core,"\core\event\course_viewed",null,web
+1715947231,3,3,45,3,30,core,"\core\event\dashboard_viewed",null,web
+1715947208,3,,14,2,50,core,"\core\event\user_list_viewed","{""courseshortname"":""Learn&Play"",""coursefullname"":""Aventura Tech: Una Aventura Interactiva en Programaci\u00f3n y Electr\u00f3nica!""}",web
+1715947203,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715947202,3,,2,1,50,core,"\core\event\course_viewed",null,web
+1715947157,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946530,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946529,5,,27,13,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1715946526,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946525,5,,41,27,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715946523,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946522,5,,15,1,70,mod_forum,"\mod_forum\event\course_module_viewed",null,web
+1715946521,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946519,5,,40,26,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715946513,5,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946512,5,5,19,5,70,mod_feedback,"\mod_feedback\event\response_submitted","{""cmid"":""5"",""instanceid"":""1"",""anonymous"":""1""}",web
+1715946505,5,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715946501,5,,14,2,50,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2"",""stepid"":4,""stepindex"":0}",web
+1715946499,5,,14,2,50,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2""}",web
+1715946460,5,5,54,5,30,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/"",""stepid"":9,""stepindex"":0}",web
+1715946457,5,5,54,5,30,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/""}",web
+1715946431,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715946429,4,,2,1,50,core,"\core\event\course_viewed",null,web
+1715943940,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943914,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943913,4,,14,2,50,core,"\core\event\section_viewed",null,web
+1715943905,4,,42,28,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715943903,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943901,4,,40,26,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715943899,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943898,4,4,19,5,70,mod_feedback,"\mod_feedback\event\response_submitted","{""cmid"":""5"",""instanceid"":""1"",""anonymous"":""1""}",web
+1715943888,4,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715943886,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943883,4,,40,26,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715943882,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943881,4,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715943880,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943878,4,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1715943877,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943876,4,,15,1,70,mod_forum,"\mod_forum\event\course_module_viewed",null,web
+1715943872,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943867,4,4,46,4,30,core,"\core\event\dashboard_viewed",null,web
+1715943838,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943836,3,3,19,5,70,mod_feedback,"\mod_feedback\event\response_submitted","{""cmid"":""5"",""instanceid"":""1"",""anonymous"":""1""}",web
+1715943826,3,,19,5,70,mod_feedback,"\mod_feedback\event\course_module_viewed","{""anonymous"":""1""}",web
+1715943755,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943753,3,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1715943752,3,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943751,3,,15,1,70,mod_forum,"\mod_forum\event\course_module_viewed",null,web
+1715943748,3,,14,2,50,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2"",""stepid"":4,""stepindex"":0}",web
+1715943745,3,,14,2,50,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2""}",web
+1715943738,3,3,45,3,30,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/"",""stepid"":9,""stepindex"":0}",web
+1715943736,3,3,45,3,30,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/""}",web
+1715943721,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943718,4,,41,27,70,mod_quiz,"\mod_quiz\event\course_module_viewed",null,web
+1715943712,4,,14,2,50,core,"\core\event\course_viewed",null,web
+1715943708,4,,17,3,70,mod_url,"\mod_url\event\course_module_viewed",null,web
+1715943702,4,,14,2,50,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2"",""stepid"":4,""stepindex"":0}",web
+1715943698,4,,14,2,50,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/course\/view.php?id=2""}",web
+1715943689,4,,2,1,50,core,"\core\event\course_viewed",null,web
+1715943655,4,,2,1,50,tool_usertours,"\tool_usertours\event\tour_ended","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/?redirect=0"",""stepid"":9,""stepindex"":0}",web
+1715943649,4,4,46,4,30,tool_usertours,"\tool_usertours\event\tour_started","{""pageurl"":""http:\/\/150.128.85.223\/moodle\/my\/""}",web

@@ -1,0 +1,8 @@
+{
+    "id": 3,
+    "fullname": "Nuevo Curso de Machine Learning",
+    "shortname": "nombre_corto",
+    "categoryid": 1,
+    "visible": 1,
+    "format": "topics"
+}
