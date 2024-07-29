@@ -2,7 +2,7 @@
 
 ## Diagrama de Clases
 
-![Diagrama de Clases](imgs/Clase UML.png)
+![Diagrama de Clases](/imgs/uml_classes.png)
 
 ### Descripción del Diagrama
 
@@ -57,7 +57,7 @@
 
 ## Diagrama de Comunicación entre Moodle y FastAPI
 
-![Diagrama de Intercomunicación](ruta/a/tu/imagen.png)
+![Diagrama de Intercomunicación](/imgs/RecommenderSystem_Communication.png)
 
 ### Descripción del Diagrama
 
