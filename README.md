@@ -51,3 +51,36 @@
     - `+ save_tfidf_weight(r1, file_name)`
     - `+ saveLoData(mydf, output_file_name)`
     - `+ prepareData()`
+
+
+
+
+## Diagrama de Comunicación entre Moodle y FastAPI
+
+![Diagrama de Intercomunicación](ruta/a/tu/imagen.png)
+
+### Descripción del Diagrama
+
+#### Envío de Logs de Moodle a FastAPI
+
+1. **Moodle Plugin** envía los logs de acciones de los estudiantes al **FastAPI Service** a través de una solicitud `POST /logs`.
+   - **Intervalo**: Continuo o cada X minutos (dependiendo de la configuración del plugin de Moodle).
+
+2. **FastAPI Service** recibe los logs y los guarda en la base de datos de logs.
+
+#### Actualización Periódica de Datos del Recomendador
+
+1. **FastAPI Service** tiene un temporizador que, a intervalos regulares, lee los logs desde la base de datos.
+   - **Intervalo**: Cada 6 horas (recomendado).
+
+2. **FastAPI Service** procesa los logs y actualiza el recomendador con los datos más recientes.
+
+#### Obtención de Recomendaciones desde Moodle
+
+1. **Moodle Plugin** envía una solicitud `GET /recommend/{learning_object_id}` al **FastAPI Service** para obtener recomendaciones de caminos de objetos de aprendizaje.
+   - **Intervalo**: Bajo demanda (cuando se requiere una recomendación específica).
+
+2. **FastAPI Service** llama al **Recommender** para generar las recomendaciones.
+3. **Recommender** devuelve las recomendaciones al **FastAPI Service**.
+4. **FastAPI Service** envía la lista de caminos de learning objects recomendados de vuelta al **Moodle Plugin**.
+
