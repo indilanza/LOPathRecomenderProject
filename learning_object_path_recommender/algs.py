@@ -45,193 +45,138 @@ class CosineSimilarity():
         return r.head(n=self.limit)
 
 
-# now, the new way of getting i2i recommendations
-class ShortestPath():
-    # expects DataFrame, loaded from ratings.csv
-    def __init__(self, df, limit=20):
+
+class ShortestPath:
+    # Initialize the class with necessary data
+    def __init__(self, df, df_uw, df_mw, use_grade_weight=False, limit=20):
         self.limit = limit
+        self.df_uw = df_uw
+        self.df_mw = df_mw
+        self.use_grade_weight = use_grade_weight
 
-        use_grade_weight = False
-
-        #cargar pesos de los usuarios
-        script_dir = os.path.dirname(os.path.realpath(__file__))
-        
-        
-        #df_uw = pd.read_csv('{}/data/user_weight.csv'.format(script_dir))
-        df_uw = pd.read_csv('{}/outputs/pesos_usuarios.csv'.format(script_dir))
-
-        if use_grade_weight==True:
-            df_uw_grades = pd.read_csv('{}/data/user_weight_grades.csv'.format(script_dir))
-
-        
-        #df_uw_grades=""
-        #df_uw_grades = pd.read_csv('{}/data/user_weight_grades.csv'.format(script_dir))
-
-        #cargar pesos de los objetos de aprendizaje
-        #df_mw=pd.read_csv('{}/data/lo_weight.csv'.format(script_dir))
-        df_mw=pd.read_csv('{}/outputs/pesos_lo.csv'.format(script_dir))
-
-        # here the order of happenings is very crucial,
+        # Sort dataframe by userId and timestamp
         df = df.sort_values(by=['userId', 'timestamp'])
-        print(df.values)
-        #print len of dataframe
-        print(len(df))
-        # once sorted, we can remove timestamp (will save us a couple of bytes)
-        df = df.drop(labels = 'timestamp', axis = 1)
-        # mids stands for LO IDs (I'm yet another lazy coder)
-        self.mids = df.index.get_level_values('loId').unique()
-        df = df.reset_index(level = 'loId')
 
-        # al is adjacency list, by the way
+        # Drop timestamp column
+        df = df.drop(labels='timestamp', axis=1)
+        
+        # Get unique learning object IDs
+        self.mids = df.index.get_level_values('loId').unique()
+        df = df.reset_index(level='loId')
+
+        # Create adjacency list
+        self.al = self.build_adjacency_list(df)
+
+    def build_adjacency_list(self, df):
         al = {}
         for uid in df.index.get_level_values('userId').unique():
-            # let's examine each user path
+            # Examine each user path
             path = df.loc[uid]
             if isinstance(path, pd.DataFrame):
-                # otherwise means a user made only one rating, not quite helpful here
+                # Otherwise means a user made only one rating, not quite helpful here
                 for m1, m2 in zip(path[:-1].itertuples(), path[1:].itertuples()):
-                    # for each pair of rated LO and next rated LO
+                    # Initialize the adjacency list
                     al.setdefault(m1.loId, {}).setdefault(m2.loId, 0)
-                    # we see what a user thinks of how similar they are,
-                    # the more both ratings are close to each other - the higher
-                    # is similarity
-                    #al[m1.loId][m2.loId] += 1/exp(abs(m1.rating - m2.rating)) - 0.5
                     
-                    #obtener el valor de los pesos del usuario uid en base a la interaccion con "los objetos de abrendisaje m1". EL peso es igual a la media de visitas del usaurio sobre la media de visitas de todos los usuarios, normalizado despues entre 0 y 1. 
-                    wu = df_uw.loc[df_uw['userId'] == uid, 'w'].values[0]
-                    wu_total=wu
+                    # Get weights for user and learning objects
+                    wu = self.get_user_weight(uid)
+                    wm = self.get_lo_weight(m2.loId)
 
-                    #obtener el valor de los pesos del usuario en base a su puntuacion final
-                    #comprobar si el usuario existe en el dataframe de los pesos de los usuarios
+                    # Calculate the similarity
+                    similarity = self.calculate_similarity(m1, m2, uid)
+
+                    # Calculate the edge weight
+                    freq_order = self.calculate_freq_order(uid, df, m1.loId, m2.loId)
+                    prof_weight = self.get_prof_weight(m1.loId, m2.loId)
                     
-                    if use_grade_weight==True:
+                    edge_weight = (similarity * wu * wm * freq_order * prof_weight)
+                    
+                    al[m1.loId][m2.loId] += edge_weight
 
-                        if len(df_uw_grades.loc[df_uw_grades['userId'] == uid]) == 0: #si no existe el usuario en el dataframe de los pesos de los usuarios. Esto puede ser que el usuario no sea un alumno o si lo fuera no haya sido calificado. Entonces se le asigna un peso pequeño valor de 0.0001 (mimo valor sustituido en el caso de que haya obtneido cero en la asignatura)
-                                #wu_grades = 0.001
-                            wu_grades=-1
-                                
-                        else:
-                            wu_grades = df_uw_grades.loc[df_uw_grades['userId'] == uid, 'w_grade'].values[0]
-                            
+        return al
 
-                        wu_total= wu*wu_grades
-                  
-                   
-                    #obtener el valor de los pesos de los objetos de aprendizaje m2. La funcion del peso, penaliza aquellas LO que se visitan con una fruencia alta, ya que posrian ser manuales que se visitan con mucha frecuencia               
-                    wm = df_mw.loc[df_mw['loId'] == m2.loId, 'w'].values[0]
+    def get_user_weight(self, uid):
+        wu = self.df_uw.loc[self.df_uw['userId'] == uid, 'w'].values[0]
+        if self.use_grade_weight:
+            wu_grades = self.df_uw_grades.loc[self.df_uw_grades['userId'] == uid, 'w_grade'].values[0]
+            wu *= wu_grades
+        return wu if wu != 0 else -1
 
+    def get_lo_weight(self, loId):
+        wm = self.df_mw.loc[self.df_mw['loId'] == loId, 'w'].values[0]
+        return wm if wm != 0 else -1
 
-                    if wu_total == 0:
-                        wu_total=-1   
+    def calculate_similarity(self, m1, m2, uid):
+        rating_diff = abs(m1.rating - m2.rating)
+        wu_prof_m1 = self.get_prof_weight(m1.loId)
+        wu_prof_m2 = self.get_prof_weight(m2.loId)
+        return 1 / np.exp((m1.rating * wu_prof_m1) - (m2.rating * wu_prof_m2))
 
-                    if wm == 0:
-                        wm=-1                  
+    def calculate_freq_order(self, uid, df, lo1, lo2):
+        # Filter the DataFrame for the specific user
+        user_df = df.loc[uid]
 
-                    #CONFIGURACIONES QUE MEJOR FUNCIONAN HASTA AHORA wu_total=wu Y wm=1
-                    #comentar o no segun se quiera utilizar los pesos de los usuarios y los LO
-                    wu_total=1
-                    #wu_total=wu 
-                    #wu_total=wu_grades #funciona incorrectamente porque con elq uery: boletin problemas del tema 2, como 4 opcion de salida pone Archivo: problemas tema 1, y no deberia ir hacia atras
-                    #wm=1
+        # Initialize the frequency counter
+        freq = 0
 
+        # Loop through the user's interactions to count transitions from lo1 to lo2
+        for i in range(len(user_df) - 1):
+            if user_df.iloc[i]['loId'] == lo1 and user_df.iloc[i + 1]['loId'] == lo2:
+                freq += 1
 
-                    #Forumlada modificada para incluir los pesos de los usuarios y las peliculas
-                    #Comprobar y corregir para le caso de que se divida por cero...... 
-                    #Agregué + 0.5 para evitar la division por cero                                     
-                    #al[m1.loId][m2.loId] += 1/wu_total*wm/exp(abs(m1.rating - m2.rating))  - 0.5
-                    #Me di cuenta que en el algoritmo implementado en lugar de dividir 1 por los valores grandes para obtener una longitud pequeña, en su lugar obtienes valores grandes que despues le ponen signo negativo para que sean los valores pequeños de distancia al ordenar y recomendar. Entonces ta formula solo contiene el denominador de la fortmula prouesta en el articulo de la web
-                    #Notal qeu en la formual originar consideraban los pesos iguales para los usuarios y los LO, pero en mi caso los he separado en pesos calculados en base a su frecuencia de interaccion global.
-                    #al[m1.loId][m2.loId] += wu_total*wm/exp(abs(m1.rating - m2.rating))  - 0.5  #esta formula tiene un inconveniente porque mientras un camino dado este mas reforazo por mas alumnos, su distancia siempre sera la mas corta. Y da igual que ponga 1/entre toda al formual, ocurre el mismo resultado o similar, sobre todo cuando prueb con el boletin 3
-                                        
-                    #al[m1.loId][m2.loId] +=  1/((wu_total*wm)/exp(abs(m1.rating - m2.rating)))  - 0.5  
+        return freq
 
-                    al[m1.loId][m2.loId] += 1/exp(abs(m1.rating - m2.rating))   #le sumo 1/e cada vez que un usuario recorre estos dos vertices
-                   
+    def get_prof_weight(self, m1, m2=None):
+        #if m2:
+        #    return self.df_mw.loc[(self.df_mw['loId1'] == m1) & (self.df_mw['loId2'] == m2), 'w_prof'].values[0]
+        #return self.df_mw.loc[self.df_mw['loId'] == m1, 'w_prof'].values[0]
+        return 1
 
-        for mid in al:
-            # let's make a list for each LO in adjacency list, so that
-            # adjacency list becomes a list indeed, along the way, we have to
-            # inverse summed up similarity, so that the higher is the similarity -
-            # the shorter is the length of an edge in LOs graph
-            al[mid] = list(map(lambda kv: (kv[0], -kv[1]), al[mid].items())) #inverte los signos de los pesos a negativo para hacer que los valores mas grandes sean mas pequeños, haciendo asi la distancia mas corta
-            # yes, list is required to be sorted from closest to farthest
-            al[mid].sort(key = lambda r: r[1])
+    def recommend(self, lo_id):
+        if not lo_id in self.al:
+            return pd.DataFrame([], columns=['loId']).set_index('loId')
+        r = pd.DataFrame(self.al[lo_id], columns=['loId', 'score'])
+        return r.set_index('loId')
+
+    def compute_shortest_paths(self):
+        for mid in self.al:
+            # Convert weights to their inverses to make them suitable for Dijkstra's algorithm
+            self.al[mid] = list(map(lambda kv: (kv[0], 1 / kv[1] if kv[1] != 0 else float('inf')), self.al[mid].items()))
+            self.al[mid].sort(key=lambda r: r[1])
 
         res = {}
-        for mid in al:
-            # you still here? sweet
-            # we have BFS with priority queue here,
-            # I always thought that its name is Dijkstra algorithm
-            # although lately realized, that Dijkstra's one used to be
-            # a little bit more naive. Wat moet ik doen?
-            # r stands for Results
+        for mid in self.al:
             r = {}
-            # e stands for elements in the queue
             e = {}
-            # q stands for queue (sincerely, C.O.)
             q = []
-            # d stands for Depth of search
-            # (well, actually, there's no depth in breadth first search,
-            # it's just a number of nodes we're willing to visit)
-            d = limit + 1
-            # starting from originator itself
+            d = self.limit + 1
             e[mid] = [0, mid]
             heappush(q, e[mid])
             while q:
-                # while there are vertices in the queue
                 v = heappop(q)
-                # and they are not dummy (-1 is explained below) or not known
-                if v[1] == -1 or not v[1] in al:
+                if v[1] == -1 or not v[1] in self.al:
                     continue
                 d -= 1
-                # and required depth isn't reached:
                 if d < 0:
                     break
 
-                # we consider current vertice a next relevant recommendation
                 r[v[1]] = v[0]
-
-                # and we have to fill the queue with
-                # other adjacent vertices
-                for av in al[v[1]]:
+                for av in self.al[v[1]]:
                     if av[0] in r:
-                        # this one we've already seen
                         continue
-                    # we're getting further from originator
                     alt = v[0] + av[1]
                     if av[0] in e:
-                        # but what if next adjacent vertice is already queued
                         if alt < e[av[0]][0]:
-                            # well, if we found a shorter path, let's prioritize
-                            # this vertice higher in the queue
                             ii = e[av[0]][1]
-                            # here we go, -1 is a dummy distance value for a vertice
-                            # that has been moved in the queue, one doesn't simply
-                            # remove a node from heapified list, if you know what I mean
                             e[av[0]][1] = -1
-                            # so we enqueue a new one
                             e[av[0]] = [alt, ii]
                             heappush(q, e[av[0]])
                     else:
-                        # otherwise, just put it in the queue
                         e[av[0]] = [alt, av[0]]
                         heappush(q, e[av[0]])
-            # of course, recommendation of a LO to itself is way too obvious
             del r[mid]
-            # listify and sort other recommendaions
             res[mid] = list(r.items())
-            res[mid].sort(key = lambda r: -r[1])
-        # save results
+            res[mid].sort(key=lambda r: -r[1])
         self.recs = res
-
-    # returns all recommendations for a given lo_id
-    # the trick here is that "limit" has already been applied upon calculation
-    # and the higher is the "limit" - the longer calculation takes, linearly,
-    # so here's no magical overtake of fancy scipy sparse matrix by pure python algorithm
-    def recommend(self, lo_id):
-        if not lo_id in self.recs:
-            return pd.DataFrame([], columns=['loId']).set_index('loId')
-        r = pd.DataFrame(self.recs[lo_id], columns=['loId', 'score'])
-        return r.set_index('loId')
 
 

@@ -31,9 +31,11 @@ base_dir = os.path.abspath(os.path.join(script_dir, '..', 'learning_object_path_
 
 los_csv = os.path.join(base_dir, 'outputs', 'Lo_data.csv')
 ratings_csv = os.path.join(base_dir, 'outputs', 'Lo_ratings_seq.csv')
+user_weights_csv= os.path.join(base_dir, 'outputs', 'pesos_usuarios.csv')
+lo_weights_csv= os.path.join(base_dir, 'outputs', 'pesos_lo.csv')
+grade_weights_csv= os.path.join(base_dir, 'data', 'user_weight_grades.csv')
 
-
-recommender = Recommender(los_csv, ratings_csv) #By default the parameters are "los_csv, ratings_csv, limit=5, interval=21600" and can be changed if needed
+recommender = Recommender(los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv)#By default the parameters are "los_csv, ratings_csv, limit=5, interval=21600" and can be changed if needed
 
 
 
@@ -317,7 +319,6 @@ def recommend_lo(learning_object_id: int):
 
                 
                 return df_recs
-
 
 
     
