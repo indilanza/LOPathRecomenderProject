@@ -2,7 +2,7 @@
 
 ## Diagrama de Clases
 
-![Diagrama de Clases](/imgs/Clase UML.png)
+![Diagrama de Clases](imgs/Clase UML.png)
 
 ### Descripción del Diagrama
 
