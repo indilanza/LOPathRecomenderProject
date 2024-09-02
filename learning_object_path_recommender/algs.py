@@ -67,7 +67,7 @@ class  ShortestPath:
         df = df.drop(labels='timestamp', axis=1)
         
         # Get unique learning object IDs
-        self.mids = df.index.get_level_values('loId').unique()
+        #self.mids = df.index.get_level_values('loId').unique()
         df = df.reset_index(level='loId')
 
         # Create adjacency list
