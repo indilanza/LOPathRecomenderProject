@@ -14,7 +14,10 @@ def saveLoDataOrder():
     lo_data.to_csv(LoData_csv, index=False)
 
 def getDataForRecommender():
-    dir = os.path.join(script_dir, '../../moodle_logs/student_logs.csv')
+    #dir = os.path.join(script_dir, '../../moodle_logs/student_logs.csv')
+    dir = os.path.join(script_dir, '../moodle_logs/student_logs.csv')  # Ruta corregida
+    print(f"Ruta generada: {dir}")
+   
     df = pd.read_csv(dir, sep=',')
 
     df = df[['userid', 'contextinstanceid', 'timecreated']]
@@ -123,7 +126,8 @@ def save_tfidf_weight(r1, file_name):
 
 def saveLoData(mydf, output_file_name):
     r = mydf[['loId']]
-    dir = os.path.join(script_dir, '../../moodle_logs/student_logs.csv')
+    #dir = os.path.join(script_dir, '../../moodle_logs/student_logs.csv')
+    dir = os.path.join(script_dir, '../moodle_logs/student_logs.csv')
     df = pd.read_csv(dir, sep=',')
 
     r = r.merge(df, left_on='loId', right_on='contextinstanceid', how='left')

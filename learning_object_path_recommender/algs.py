@@ -46,13 +46,19 @@ class CosineSimilarity():
 
 
 
-class ShortestPath:
+class  ShortestPath:
     # Initialize the class with necessary data
-    def __init__(self, df, df_uw, df_mw, use_grade_weight=False, limit=20):
+    def __init__(self, df, df_uw, df_mw, grade_weights, ause_grade_weight=False, limit=20):
         self.limit = limit
         self.df_uw = df_uw
         self.df_mw = df_mw
-        self.use_grade_weight = use_grade_weight
+        self.grade_weights=grade_weights
+        self.use_grade_weight = ause_grade_weight
+        self.distances = {}  # to store shortest paths
+
+         # Verificación
+        if not isinstance(self.use_grade_weight, bool):
+            raise ValueError(f"Expected boolean for use_grade_weight, but got {type(self.use_grade_weight)}")
 
         # Sort dataframe by userId and timestamp
         df = df.sort_values(by=['userId', 'timestamp'])
@@ -66,6 +72,7 @@ class ShortestPath:
 
         # Create adjacency list
         self.al = self.build_adjacency_list(df)
+        self.compute_shortest_paths()
 
     def build_adjacency_list(self, df):
         al = {}
@@ -97,7 +104,7 @@ class ShortestPath:
 
     def get_user_weight(self, uid):
         wu = self.df_uw.loc[self.df_uw['userId'] == uid, 'w'].values[0]
-        if self.use_grade_weight:
+        if self.use_grade_weight==True:
             wu_grades = self.df_uw_grades.loc[self.df_uw_grades['userId'] == uid, 'w_grade'].values[0]
             wu *= wu_grades
         return wu if wu != 0 else -1
@@ -132,11 +139,38 @@ class ShortestPath:
         #return self.df_mw.loc[self.df_mw['loId'] == m1, 'w_prof'].values[0]
         return 1
 
-    def recommend(self, lo_id):
+   # Get recommendations for a learning object (WORKING)
+    """def recommend(self, lo_id):
         if not lo_id in self.al:
             return pd.DataFrame([], columns=['loId']).set_index('loId')
-        r = pd.DataFrame(self.al[lo_id], columns=['loId', 'score'])
-        return r.set_index('loId')
+        
+        # Convertir el diccionario a una lista de tuplas (loId, score)
+        items = list(self.al[lo_id].items())
+        # Crear un DataFrame a partir de esta lista de tuplas
+        r = pd.DataFrame(items, columns=['loId', 'score'])
+
+        #r = pd.DataFrame(self.al[lo_id], columns=['loId', 'score'])
+        return r.set_index('loId') """
+    
+
+    # Get recommendations for a learning object
+    def recommend(self, lo_id):
+        if lo_id not in self.recs:
+            return pd.DataFrame([], columns=['loId']).set_index('loId')
+
+        # Get the precomputed shortest paths for the given LO
+        r = pd.DataFrame(self.recs[lo_id], columns=['loId', 'distance'])
+        
+        # Sort by distance in ascending order (shorter distance means more relevant)
+        r = r.sort_values(by='distance', ascending=True)
+        
+        # Limit the number of recommendations based on self.limit
+        return r.head(self.limit).set_index('loId')
+
+
+
+
+
 
     def compute_shortest_paths(self):
         for mid in self.al:
@@ -150,7 +184,7 @@ class ShortestPath:
             e = {}
             q = []
             d = self.limit + 1
-            e[mid] = [0, mid]
+            e[mid] = [0, mid]  # Initialize with a distance of 0 from the starting node
             heappush(q, e[mid])
             while q:
                 v = heappop(q)
@@ -160,7 +194,7 @@ class ShortestPath:
                 if d < 0:
                     break
 
-                r[v[1]] = v[0]
+                r[v[1]] = v[0]  # Store the cumulative distance to this node
                 for av in self.al[v[1]]:
                     if av[0] in r:
                         continue
@@ -176,7 +210,7 @@ class ShortestPath:
                         heappush(q, e[av[0]])
             del r[mid]
             res[mid] = list(r.items())
-            res[mid].sort(key=lambda r: -r[1])
+            res[mid].sort(key=lambda r: r[1])  # Sort by distance in ascending order
         self.recs = res
 
 

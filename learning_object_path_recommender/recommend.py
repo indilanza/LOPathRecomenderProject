@@ -7,7 +7,7 @@ from algs import CosineSimilarity, ShortestPath
 from preprocess_functions_moodle_server import prepareData
 
 class Recommender:
-    def __init__(self, los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv=None, limit=5, interval=21600):
+    def __init__(self, los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv=None, limit=5, interval=300): #interval=300 (5 minutes)
         self.los_csv = los_csv
         self.ratings_csv = ratings_csv
         self.user_weights_csv = user_weights_csv
@@ -34,7 +34,7 @@ class Recommender:
         grade_weights = pd.read_csv(self.grade_weights_csv) if self.grade_weights_csv else None
 
         self.cosine = CosineSimilarity(ratings, limit=self.limit)
-        self.shortp = ShortestPath(ratings, user_weights, lo_weights, grade_weights, limit=self.limit)
+        self.shortp = ShortestPath(ratings, user_weights, lo_weights, grade_weights,False, limit=self.limit) #def __init__(self, df, df_uw, df_mw, ause_grade_weight=False, limit=20):
         print("Updated Recomendations.")
 
     def start_timer(self):
@@ -69,3 +69,4 @@ if __name__ == "__main__":
     lo_weights_csv = '{}/outputs/pesos_lo.csv'.format(script_dir)
     
     recommender = Recommender(los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv)
+    print(recommender.get_recs_for(58))

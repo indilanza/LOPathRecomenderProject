@@ -1,18 +1,21 @@
 from fastapi import FastAPI, HTTPException
 import httpx
+import pandas as pd
 from pydantic import BaseModel
 from typing import List
 from fastapi.middleware.cors import CORSMiddleware
 import csv
 import uvicorn
-
+import numpy as np
 import sys
-sys.path.append('/home/indira/eDiplomaProyect')
+#sys.path.append('/home/indira/eDiplomaProyect')
 
 # Importar tu biblioteca local
 
 #import sys
 #sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\eDiplomaProyect\\learning_object_path_recommender')
+sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\LOPathRecomenderProject\\learning_object_path_recommender')
+
 
 #from learning_object_path_recommender import *  # o cualquier otro import necesario
 #from learning_object_path_recommender.recommend import get_recs_for
@@ -20,7 +23,7 @@ sys.path.append('/home/indira/eDiplomaProyect')
 
 import os
 
-from learning_object_path_recommender.recommend import Recommender
+from recommend import Recommender
 
 
 
@@ -36,6 +39,7 @@ lo_weights_csv= os.path.join(base_dir, 'outputs', 'pesos_lo.csv')
 grade_weights_csv= os.path.join(base_dir, 'data', 'user_weight_grades.csv')
 
 recommender = Recommender(los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv)#By default the parameters are "los_csv, ratings_csv, limit=5, interval=21600" and can be changed if needed
+                                                                                                    #recommender = Recommender(los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv)
 
 
 
@@ -113,7 +117,8 @@ async def append_log(logLine: MoodleLogLine):
 @app.post("/logs/")
 async def receive_logs(logs: list[LogEntry]):
     # Guardar los logs en un archivo CSV
-    csv_file = '../moodle_logs/student_logs.csv'
+    #csv_file = '../moodle_logs/student_logs.csv'
+    csv_file = os.path.join(script_dir,'../moodle_logs/student_logs.csv')
     #with open(csv_file, mode='a', newline='') as file:
     with open(csv_file, mode='w', newline='') as file:
         writer = csv.DictWriter(file, fieldnames=LogEntry.model_fields.keys())
@@ -310,41 +315,79 @@ async def send_learning_objects(learning_objects: List[str]):
             
 
                
+def clean_dataframe(df):
+    # Reemplazar infinitos por NaN
+    df.replace([np.inf, -np.inf], np.nan, inplace=True)
 
+    # Eliminar filas donde 'Shortest path alg:' sea NaN
+    if 'Shortest path alg:' in df.columns:
+        df = df.dropna(subset=['Shortest path alg:'])
+
+    # Reemplazar NaN por None en otras columnas (si es necesario)
+    df = df.applymap(lambda x: None if pd.isna(x) else x)
+    
+    return df
 
 
 def recommend_lo(learning_object_id: int):
                 #df_recs=get_recs_for(learning_object_id)
-                df_recs = recommender.get_recs_for(learning_object_id)
 
+               
+                
+                df_recs = recommender.get_recs_for(learning_object_id)
+                
                 
                 return df_recs
 
 
     
-
+"""
 @app.get("/recommend/{learning_object_id}")
 async def recommend(learning_object_id: int):
     # Llamar a la función recommend_lo y obtener el resultado
     result_df = recommend_lo(learning_object_id)
+    print(result_df)
+
+    # Limpiar el DataFrame para eliminar valores problemáticos
+    result_df = clean_dataframe(result_df)
 
     # Convertir el DataFrame a un diccionario con listas
     result_dict = result_df.to_dict(orient='list') 
-    #Ejemplo de los datos que se obtienen en el diccionario: 
-    """ {
-    'IDc:': [4527981, 4527986, 4527988, 4527987, 4527992],
-    'Cosine similarity alg:': ['Archivo: Problemas Tema 1', 'Archivo: Problemas con conjuntos', 'Archivo: Ejercicios cortos con pilas, colas, y árboles binarios', 'Archivo: Boletín de problemas del tema 2', 'Archivo: Boletín de problemas del tema 3'],
-    'IDs:': [4528013, 4617667, 4619646, 4625677, 4630203],
-    'Shortest path alg:': ['Carpeta: Práctica 1 (29 de Septiembre y 1 de Octubre)', 'Carpeta: Práctica 2 (6 y 8 de Octubre)', 'Carpeta: Practica 3', 'URL: Resumen de notas', 'Carpeta: Práctica 5']
-    }"""
-    
+    print(result_dict)
+      
     # Verificar si el resultado es un diccionario válido
     if isinstance(result_dict, dict) and all(isinstance(value, list) for value in result_dict.values()):
         return result_dict
     else:
         raise HTTPException(status_code=500, detail="El resultado no es válido")
 
-        
+ """
+@app.get("/recommend/{learning_object_id}")
+async def recommend(learning_object_id: int):
+    try:
+        # Llamar a la función recommend_lo y obtener el resultado
+        result_df = recommend_lo(learning_object_id)
+        print("Result DataFrame:", result_df)
+
+        # Limpiar el DataFrame para eliminar valores problemáticos
+        result_df = clean_dataframe(result_df)
+        print("Cleaned DataFrame:", result_df)
+
+        # Convertir el DataFrame a un diccionario con listas
+        result_dict = result_df.to_dict(orient='list')
+        print("Result Dict:", result_dict)
+
+        # Verificar si el resultado es un diccionario válido
+        if isinstance(result_dict, dict) and all(isinstance(value, list) for value in result_dict.values()):
+            return result_dict
+        else:
+            print("Invalid result_dict format.")
+            raise HTTPException(status_code=500, detail="El resultado no es válido")
+
+    except Exception as e:
+        print("An error occurred:", str(e))
+        raise HTTPException(status_code=500, detail=f"An error occurred: {str(e)}")
+
 
 @app.get("/get_objects_from_csv")
 async def get_objects_from_csv():
