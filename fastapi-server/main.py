@@ -14,7 +14,7 @@ import sys
 
 #import sys
 #sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\eDiplomaProyect\\learning_object_path_recommender')
-sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\LOPathRecomenderProject\\learning_object_path_recommender')
+#sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\LOPathRecomenderProject\\learning_object_path_recommender')
 
 
 #from learning_object_path_recommender import *  # o cualquier otro import necesario
@@ -23,7 +23,12 @@ sys.path.append('C:\\Users\\indir\\Documents\\eDiploma_IA_Server\\LOPathRecomend
 
 import os
 
-from recommend import Recommender
+# Añadir el directorio raíz del proyecto al sys.path
+script_dir = os.path.dirname(os.path.realpath(__file__))
+base_dir = os.path.abspath(os.path.join(script_dir, '..'))
+sys.path.append(base_dir)
+
+from learning_object_path_recommender.recommend import Recommender
 
 
 
