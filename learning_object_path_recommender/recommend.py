@@ -2,12 +2,12 @@
 import pandas as pd
 import os
 import threading
-from search import Search
-from algs import CosineSimilarity, ShortestPath
-from preprocess_functions_moodle_server import prepareData
+from .search import Search
+from .algs import CosineSimilarity, ShortestPath
+from .preprocess_functions_moodle_server import prepareData
 
 class Recommender:
-    def __init__(self, los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv=None, limit=5, interval=300): #interval=300 (5 minutes)
+    def __init__(self, los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv=None, limit=5, interval=60): #interval=300 (5 minutes)
         self.los_csv = los_csv
         self.ratings_csv = ratings_csv
         self.user_weights_csv = user_weights_csv
@@ -69,4 +69,4 @@ if __name__ == "__main__":
     lo_weights_csv = '{}/outputs/pesos_lo.csv'.format(script_dir)
     
     recommender = Recommender(los_csv, ratings_csv, user_weights_csv, lo_weights_csv, grade_weights_csv)
-    print(recommender.get_recs_for(58))
+    print(recommender.get_recs_for(70))
