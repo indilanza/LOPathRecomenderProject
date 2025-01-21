@@ -1,4 +1,48 @@
 # Recommendation Project
+## Implementation
+
+The recommendation system for learning objects is built exclusively using data from Moodle logs, which are easily accessible through the course logs download option. This data is provided in CSV format, containing details such as timestamps, user identities, event types, and component details. The reliance on Moodle logs allows for straightforward and efficient data extraction without requiring access to Moodle’s internal database. Below are the steps used to preprocess the data and prepare it for the recommendation system:
+
+### 1. User and Component Filtering
+To ensure that only student interactions are analyzed, logs related to instructors or administrators are filtered out. This step isolates entries where users are actively engaging with course content, such as accessing resources or participating in forums.
+
+### 2. Data Anonymization
+In compliance with privacy standards, all identifying information is anonymized. Using pseudonymization, each user’s identifier is replaced with a unique, randomly generated code. This ensures the analysis respects privacy while maintaining interaction patterns for each user.
+
+### 3. Event Parsing and Code Extraction
+Regular expressions are used to extract key identifiers, including user IDs, component IDs, and subcomponents (if available). These fields enrich the dataset, enabling an accurate representation of user engagement with learning objects.
+
+### 4. Data Reduction and Relevant Event Selection
+The preprocessing pipeline focuses on interactions with specific components such as "Folder," "Resource," and "URL." Non-informative events (e.g., system configuration logs) are excluded, capturing only interactions relevant to educational recommendations.
+
+### 5. Interaction Frequency and Weight Assignment
+The system calculates access frequencies for each user-resource pair, normalizing these values to derive a "rating" score. This rating reflects the relative significance of each learning object based on user engagement.
+
+### 6. User Weight Calculation
+Each user is assigned a weight based on their engagement with learning objects:
+- The average interaction frequency (or "rating") across all users is calculated.
+- For each user, the average rating is divided by the global average, yielding a normalized weight.
+- This weight is scaled between 0 and 1 for consistency. Optionally, the weights can be enhanced using grades or success indicators, capturing both intermediate and final performance metrics.
+
+### 7. Temporal Structuring
+All interactions are organized chronologically, with timestamps converted to a machine-readable format. This temporal arrangement supports sequence-based recommendation models.
+
+### 8. Output Fact Tables
+The preprocessed data is saved in structured fact tables, aligning with the defined data model. Each fact table serves a distinct purpose in the recommendation process:
+
+| **Fact Table**                     | **Description**                                                               |
+|------------------------------------|-------------------------------------------------------------------------------|
+| **Users weights**                  | Stores normalized user weights.                                               |
+| **Learning Objects weights**       | Contains weight assignments for each learning object based on engagement.     |
+| **Learning objects interaction logs** | Records sequential "rating" (engagement) values for each user-resource interaction. |
+| **Learning objects data**          | Provides metadata for learning objects, including titles and categories.      |
+
+### Key Advantages
+1. **Scalability:** The system relies solely on Moodle log data, making it easily implementable across institutions.
+2. **Simplicity:** The straightforward preprocessing ensures minimal technical requirements.
+3. **Transparency:** The approach allows clear interpretability of the generated recommendations.
+
+These structured outputs serve as the foundation for the recommendation and validation scripts, ensuring adaptability and ease of implementation for a wide range of educational environments.
 
 ## Class Diagram
 
