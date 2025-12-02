@@ -1,4 +1,5 @@
-# Recommendation Project
+# LOPathRecommenderProject: Adaptive Learning Path Recommendation Engine for Moodle
+[![DOI](https://zenodo.org/badge/833572504.svg)](https://doi.org/10.5281/zenodo.17789576)
 ## Implementation
 
 The recommendation system for learning objects is built exclusively using data from Moodle logs, which are easily accessible through the course logs download option. This data is provided in CSV format, containing details such as timestamps, user identities, event types, and component details. The reliance on Moodle logs allows for straightforward and efficient data extraction without requiring access to Moodle’s internal database. Below are the steps used to preprocess the data and prepare it for the recommendation system:
